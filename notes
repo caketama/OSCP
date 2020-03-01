@@ -1,0 +1,47 @@
+apropos - serach the manual page names and descriptions
+
+ss -antlp
+
+apt-cache search
+apt show
+
+dpkg
+$HISTSIZE $HISTFILESIZE
+
+!! repeat last command
+
+2 = stderr, 1 = stdout, 0 = stdin
+
+comm - compare files
+
+axel - command line download accelerator
+
+cutycapt - utility to capture webkits rendering of a page
+
+gitrob / gitleaks
+
+nfs unix insecure
+
+python3 -m http.server [port] - simple http server for transferring files
+
+msf-pattern_create - create unique pattern for offsets to control EIP register
+
+msf-pattern_offset - locate 4 bytes in unique string to control EIP
+
+msf-nasm_shell - find opcodes
+
+client side attacks - exploit weaknesses in client software, such as a browser, instead of server side software. This often involves some form of user interaction
+
+fingerprintjs2
+
+searchsploit -m mirror option. copy script to pwd
+
+cross complie windows exploit on kali mingw i686-w64-mingw-gcc
+
+wine - run windows binary
+
+upgrade shell - python -c 'import pty; pty.spawn("/bin/bash")'
+
+upx
+
+exe2hex
