@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Mar  1 13:14:23 2020 as: nmap -p139,445 -&#45;script=smb-vuln-* -oA smb-vuln -iL smb -->
+<nmaprun scanner="nmap" args="nmap -p139,445 -&#45;script=smb-vuln-* -oA smb-vuln -iL smb" start="1583086463" startstr="Sun Mar  1 13:14:23 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="NSE" time="1583086496" percent="28.80" remaining="77" etc="1583086573"/>
+<taskprogress task="NSE" time="1583086526" percent="44.80" remaining="76" etc="1583086601"/>
+<taskprogress task="NSE" time="1583086556" percent="56.80" remaining="70" etc="1583086625"/>
+<taskprogress task="NSE" time="1583086586" percent="68.40" remaining="56" etc="1583086642"/>
+<taskprogress task="NSE" time="1583086616" percent="83.20" remaining="31" etc="1583086646"/>
+<taskprogress task="NSE" time="1583086646" percent="97.60" remaining="5" etc="1583086650"/>
+<taskend task="NSE" time="1583086654"/>
+<host starttime="1583086464" endtime="1583086647"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-cve2009-3103" output="&#xa;  VULNERABLE:&#xa;  SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2009-3103&#xa;          Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,&#xa;          Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a&#xa;          denial of service (system crash) via an &amp; (ampersand) character in a Process ID High header field in a NEGOTIATE&#xa;          PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,&#xa;          aka &quot;SMBv2 Negotiation Vulnerability.&quot;&#xa;          &#xa;    Disclosure date: 2009-09-08&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103&#xa;      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103&#xa;"><table key="CVE-2009-3103">
+<elem key="title">SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2009-3103</elem>
+</table>
+<table key="description">
+<elem>    Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,&#xa;    Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a&#xa;    denial of service (system crash) via an &amp; (ampersand) character in a Process ID High header field in a NEGOTIATE&#xa;    PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,&#xa;    aka &quot;SMBv2 Negotiation Vulnerability.&quot;&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2009</elem>
+<elem key="month">09</elem>
+<elem key="day">08</elem>
+</table>
+</table>
+<elem key="disclosure">2009-09-08</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103</elem>
+<elem>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103</elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script></hostscript><times srtt="29397" rttvar="17682" to="100125"/>
+</host>
+<host starttime="1583086464" endtime="1583086634"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="No accounts left to try">false</script></hostscript><times srtt="31294" rttvar="18702" to="106102"/>
+</host>
+<host starttime="1583086464" endtime="1583086645"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.20" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="29767" rttvar="17644" to="100343"/>
+</host>
+<host starttime="1583086464" endtime="1583086638"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.21" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="No accounts left to try">false</script></hostscript><times srtt="32410" rttvar="19692" to="111178"/>
+</host>
+<host starttime="1583086464" endtime="1583086637"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="NT_STATUS_ACCESS_DENIED">false</script></hostscript><times srtt="32438" rttvar="19628" to="110950"/>
+</host>
+<host starttime="1583086464" endtime="1583086634"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.24" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="NT_STATUS_ACCESS_DENIED">false</script></hostscript><times srtt="32397" rttvar="19608" to="110829"/>
+</host>
+<host starttime="1583086464" endtime="1583086647"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.31" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="33038" rttvar="18866" to="108502"/>
+</host>
+<host starttime="1583086464" endtime="1583086652"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-16">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script></hostscript><times srtt="32656" rttvar="19827" to="111964"/>
+</host>
+<host starttime="1583086464" endtime="1583086635"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.111" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="49678" rttvar="34360" to="187118"/>
+</host>
+<host starttime="1583086464" endtime="1583086632"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.115" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-cve2009-3103" output="&#xa;  VULNERABLE:&#xa;  SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2009-3103&#xa;          Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,&#xa;          Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a&#xa;          denial of service (system crash) via an &amp; (ampersand) character in a Process ID High header field in a NEGOTIATE&#xa;          PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,&#xa;          aka &quot;SMBv2 Negotiation Vulnerability.&quot;&#xa;          &#xa;    Disclosure date: 2009-09-08&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103&#xa;      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103&#xa;"><table key="CVE-2009-3103">
+<elem key="title">SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2009-3103</elem>
+</table>
+<table key="description">
+<elem>    Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,&#xa;    Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a&#xa;    denial of service (system crash) via an &amp; (ampersand) character in a Process ID High header field in a NEGOTIATE&#xa;    PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,&#xa;    aka &quot;SMBv2 Negotiation Vulnerability.&quot;&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2009</elem>
+<elem key="month">09</elem>
+<elem key="day">08</elem>
+</table>
+</table>
+<elem key="disclosure">2009-09-08</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103</elem>
+<elem>http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103</elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]">false</script></hostscript><times srtt="32562" rttvar="19735" to="111502"/>
+</host>
+<host starttime="1583086464" endtime="1583086632"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.120" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="33477" rttvar="19436" to="111221"/>
+</host>
+<host starttime="1583086464" endtime="1583086644"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.121" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="31866" rttvar="20757" to="114894"/>
+</host>
+<host starttime="1583086464" endtime="1583086640"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.122" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="25578" rttvar="15082" to="100000"/>
+</host>
+<host starttime="1583086464" endtime="1583086643"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.123" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-conficker" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="No accounts left to try">false</script></hostscript><times srtt="28499" rttvar="20728" to="111411"/>
+</host>
+<host starttime="1583086464" endtime="1583086642"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.128" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-conficker" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="No accounts left to try">false</script></hostscript><times srtt="31906" rttvar="20220" to="112786"/>
+</host>
+<host starttime="1583086464" endtime="1583086652"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.136" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="32893" rttvar="20262" to="113941"/>
+</host>
+<host starttime="1583086464" endtime="1583086647"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.220" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="NT_STATUS_ACCESS_DENIED">false</script></hostscript><times srtt="26044" rttvar="15531" to="100000"/>
+</host>
+<host starttime="1583086464" endtime="1583086631"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="26225" rttvar="15853" to="100000"/>
+</host>
+<host starttime="1583086464" endtime="1583086633"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.227" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms08-067" output="&#xa;  VULNERABLE:&#xa;  Microsoft Windows system vulnerable to remote code execution (MS08-067)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2008-4250&#xa;          The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;          Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;          code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;          &#xa;    Disclosure date: 2008-10-23&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250&#xa;      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx&#xa;"><table key="CVE-2008-4250">
+<elem key="title">Microsoft Windows system vulnerable to remote code execution (MS08-067)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2008-4250</elem>
+</table>
+<table key="description">
+<elem>    The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,&#xa;    Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary&#xa;    code via a crafted RPC request that triggers the overflow during path canonicalization.&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2008</elem>
+<elem key="month">10</elem>
+<elem key="day">23</elem>
+</table>
+</table>
+<elem key="disclosure">2008-10-23</elem>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms08-067.aspx</elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-ms17-010" output="&#xa;  VULNERABLE:&#xa;  Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2017-0143&#xa;    Risk factor: HIGH&#xa;      A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa;       servers (ms17-010).&#xa;          &#xa;    Disclosure date: 2017-03-14&#xa;    References:&#xa;      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143&#xa;      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx&#xa;"><table key="CVE-2017-0143">
+<elem key="title">Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2017-0143</elem>
+</table>
+<table key="description">
+<elem>A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa; servers (ms17-010).&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="year">2017</elem>
+<elem key="month">03</elem>
+<elem key="day">14</elem>
+</table>
+</table>
+<elem key="disclosure">2017-03-14</elem>
+<table key="refs">
+<elem>https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms17-010.aspx</elem>
+</table>
+</table>
+</script></hostscript><times srtt="31743" rttvar="20227" to="112651"/>
+</host>
+<host starttime="1583086464" endtime="1583086654"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.231" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-3">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script></hostscript><times srtt="33186" rttvar="20928" to="116898"/>
+</host>
+<host starttime="1583086464" endtime="1583086639"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.11.1.241" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="28737" rttvar="16477" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1583086654"/>
+<taskend task="NSE" time="1583086654"/>
+<runstats><finished time="1583086654" timestr="Sun Mar  1 13:17:34 2020" elapsed="190.63" summary="Nmap done at Sun Mar  1 13:17:34 2020; 22 IP addresses (21 hosts up) scanned in 190.63 seconds" exit="success"/><hosts up="21" down="1" total="22"/>
+</runstats>
+</nmaprun>

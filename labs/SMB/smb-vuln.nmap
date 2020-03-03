@@ -1,0 +1,331 @@
+# Nmap 7.80 scan initiated Sun Mar  1 13:14:23 2020 as: nmap -p139,445 --script=smb-vuln-* -oA smb-vuln -iL smb
+Nmap scan report for 10.11.1.5
+Host is up (0.029s latency).
+Scanned at 2020-03-01 13:14:24 EST for 183s
+
+PORT    STATE  SERVICE
+139/tcp open   netbios-ssn
+445/tcp closed microsoft-ds
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+
+Nmap scan report for 10.11.1.13
+Host is up (0.031s latency).
+Scanned at 2020-03-01 13:14:24 EST for 170s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+Nmap scan report for 10.11.1.20
+Host is up (0.030s latency).
+Scanned at 2020-03-01 13:14:24 EST for 181s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.21
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 174s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+Nmap scan report for 10.11.1.22
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 173s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+Nmap scan report for 10.11.1.24
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 170s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+Nmap scan report for 10.11.1.31
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 183s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: ERROR: Script execution failed (use -d to debug)
+
+Nmap scan report for 10.11.1.101
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 188s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+
+Nmap scan report for 10.11.1.111
+Host is up (0.050s latency).
+Scanned at 2020-03-01 13:14:24 EST for 171s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.115
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 168s
+
+PORT    STATE  SERVICE
+139/tcp open   netbios-ssn
+445/tcp closed microsoft-ds
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+
+Nmap scan report for 10.11.1.120
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 168s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.121
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 180s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.122
+Host is up (0.026s latency).
+Scanned at 2020-03-01 13:14:24 EST for 176s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.123
+Host is up (0.028s latency).
+Scanned at 2020-03-01 13:14:24 EST for 179s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-conficker: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+Nmap scan report for 10.11.1.128
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 178s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-conficker: ERROR: Script execution failed (use -d to debug)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+Nmap scan report for 10.11.1.136
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 188s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+
+Nmap scan report for 10.11.1.220
+Host is up (0.026s latency).
+Scanned at 2020-03-01 13:14:24 EST for 183s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+Nmap scan report for 10.11.1.222
+Host is up (0.026s latency).
+Scanned at 2020-03-01 13:14:24 EST for 167s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap scan report for 10.11.1.227
+Host is up (0.032s latency).
+Scanned at 2020-03-01 13:14:24 EST for 169s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+Nmap scan report for 10.11.1.231
+Host is up (0.033s latency).
+Scanned at 2020-03-01 13:14:24 EST for 190s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+
+Nmap scan report for 10.11.1.241
+Host is up (0.029s latency).
+Scanned at 2020-03-01 13:14:24 EST for 175s
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Mar  1 13:17:34 2020 -- 22 IP addresses (21 hosts up) scanned in 190.63 seconds
