@@ -119,3 +119,40 @@ hydra $ip http-form-post "/form/frontpage.php:user=admin&pass=^PASS^:INVALID LOG
 sql injection
 
 RINETD
+
+ssh remote port forwarding
+ssh -N -R [bind-address:]port:host:hostport [username@address]
+
+ssh dynamic port forwarding
+ssh -N -D address-to-bind-to:port-to-bind-to username@SSH-server-address
+
+proxychains
+
+active directory
+net user
+net user /domain
+
+net user jeff_admin /domain
+
+do all the exercises
+
+local security authority subsystem service - kerberos
+
+mimikatz - find windows machines and try!!
+figure out windows compromises
+watch ipsecc easy windows machines
+
+find linux machines
+break into as many as possible
+look into priv esc
+
+use auxiliary/scanner/portscan/tcp
+
+set EnableStageEncoding true
+set StageEncoder x86/shikata_ga_nai
+
+always try and figure out ways to be quiet
+use encryption, tunnels, known ports, i.e 80, 443 etc
+
+scan every machine in network
+spend time with nmap
