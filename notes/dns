@@ -14,3 +14,6 @@ MX - Mail Exchange records. Contains the names of the servers responsible for ha
 PTR - Pointer Records are used in reverse lookup zones and are used to find the records associated with an IP address
 CNAME - Canonical name record are usd to create aliases for other host records
 TXT - Text records can contain any arbitarydata and can be used for various purposes
+
+https://resources.infosecinstitute.com/dns-enumeration-techniques-in-linux/
+https://resources.infosecinstitute.com/dns-hacking/
