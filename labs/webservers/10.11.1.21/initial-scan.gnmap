@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Mon Mar  2 20:13:53 2020 as: nmap -sC -sV -oA initial-scan 10.11.1.21
-Host: 10.11.1.21 ()	Status: Up
-Host: 10.11.1.21 ()	Ports: 21/open/tcp//ftp//FileZilla ftpd/, 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Microsoft Windows Server 2008 R2 - 2012 microsoft-ds/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: closed (994)
-# Nmap done at Mon Mar  2 20:14:15 2020 -- 1 IP address (1 host up) scanned in 21.74 seconds

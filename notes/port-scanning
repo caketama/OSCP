@@ -8,4 +8,7 @@ SYN scanning is a tcp port scanning method that involves sending SYN packets to 
 If a TCP is open, a SYN-ACK should be sent back from the target machine, informing us that the port is open. At this point, the port scanner does not bother to send the final ACK to complete the three-way handshake.
 
 nmap -sS for syn scan
-nmap -sU for udp scanning
+nmap -sU for udp scanning - to perform a UDP scan, the -sU option is usd and sudo is required to access raw sockets
+
+nmap --script-help [script-name]
+displays a description of the script and a url where we can find more in-depth information

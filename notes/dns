@@ -17,3 +17,9 @@ TXT - Text records can contain any arbitarydata and can be used for various purp
 
 https://resources.infosecinstitute.com/dns-enumeration-techniques-in-linux/
 https://resources.infosecinstitute.com/dns-hacking/
+
+commands:
+host
+dig
+nslookup
+dnsrecon
