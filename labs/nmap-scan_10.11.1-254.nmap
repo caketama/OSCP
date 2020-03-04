@@ -1,0 +1,942 @@
+# Nmap 7.80 scan initiated Wed Mar  4 08:24:37 2020 as: nmap -A -p80 --open -oA nmap-scan_10.11.1-254 10.11.1.0/24
+Nmap scan report for 10.11.1.14
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 5.1
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST
+|_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT
+|_http-server-header: Microsoft-IIS/5.1
+|_http-title: Site doesn't have a title (text/html).
+| http-webdav-scan: 
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK
+|   WebDAV type: Unknown
+|   Server Type: Microsoft-IIS/5.1
+|_  Server Date: Wed, 04 Mar 2020 13:26:28 GMT
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|specialized|power-device
+Running (JUST GUESSING): Microsoft Windows XP|2003|7 (91%), Belkin embedded (85%), SMA embedded (85%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003::sp2 cpe:/o:microsoft:windows_7
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows XP (91%), Microsoft Windows XP SP3 (88%), Microsoft Windows Server 2003 SP2 (86%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (85%), Microsoft Windows 7 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=85%GCD=1%ISR=9C%TI=I%II=I%SS=S%TS=0)
+OPS(O1=M54DNW0NNT00NNS%O2=M54DNW0NNT00NNS%O3=M54DNW0NNT00%O4=M54DNW0NNT00NNS%O5=M54DNW0NNT00NNS%O6=M54DNNT00NNS)
+WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)
+ECN(R=Y%DF=Y%TG=80%W=FAF0%O=M54DNW0NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=S%TG=80%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=138 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   18.75 ms 10.11.1.14
+
+Nmap scan report for 10.11.1.21
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: SV Corporation Editorial Process
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2016 (94%), Microsoft Windows 10 1607 (91%), Microsoft Windows Server 2012 (91%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (91%), Microsoft Windows Server 2012 R2 (91%), Microsoft Windows Server 2008 R2 (89%), Microsoft Windows 10 1511 - 1607 (88%), Microsoft Windows 7 Professional (88%), Microsoft Windows 7 or Windows Server 2008 R2 (87%), Microsoft Windows Server 2008 R2 or Windows 8.1 (87%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=44409%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=105%GCD=2%ISR=10E%TI=I%II=I%SS=S%TS=A)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%T=80%W=2000%O=M54DNW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.060 days (since Wed Mar  4 07:01:47 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   43.32 ms 10.11.1.21
+
+Nmap scan report for 10.11.1.31
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 10.0
+| http-cookie-flags: 
+|   /: 
+|     ASPSESSIONIDASAQCSCA: 
+|_      httponly flag not set
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Login
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2016|2012|2008|10 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_server_2012 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_10:1607
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2016 (91%), Microsoft Windows Server 2012 (85%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2008 R2 (85%), Microsoft Windows 10 1607 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=10C%TI=I%II=I%SS=S%TS=A)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M54DNW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 0.598 days (since Tue Mar  3 18:06:07 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.08 ms 10.11.1.31
+
+Nmap scan report for 10.11.1.35
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 4.4 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 4.9 (94%), Linux 3.10 - 3.12 (93%), Linux 4.0 (92%), Linux 2.6.18 (91%), Linux 3.10 (91%), Linux 3.10 - 3.16 (91%), Linux 3.10 - 4.11 (90%), Linux 3.11 - 4.1 (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=36614%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=109%TI=Z%TS=A)
+SEQ(SP=105%GCD=1%ISR=109%TI=Z%II=I%TS=A)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 1.268 days (since Tue Mar  3 02:01:19 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   43.70 ms 10.11.1.35
+
+Nmap scan report for 10.11.1.39
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.6.3
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: nginx/1.6.3
+|_http-title: Apache HTTP Server Test Page powered by CentOS
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 4.X|3.X|2.6.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 4.4 (91%), Linux 3.10 - 3.12 (89%), Linux 4.9 (89%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.10 - 3.16 (86%), Linux 4.0 (86%), Linux 3.10 - 4.11 (85%), Linux 3.11 - 4.1 (85%), Linux 3.18 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=108%TI=Z%II=I%TS=A)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.753 days (since Tue Mar  3 14:23:00 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.74 ms 10.11.1.39
+
+Nmap scan report for 10.11.1.50
+Host is up (0.033s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 8.5
+|_http-favicon: Unknown favicon MD5: B6341DFC213100C61DB4FB8775878CEC
+|_http-generator: Drupal 7 (http://drupal.org)
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 36 disallowed entries 
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+| /LICENSE.txt /MAINTAINERS.txt /update.php /UPGRADE.txt /xmlrpc.php 
+| /admin/ /comment/reply/ /filter/tips/ /node/add/ /search/ 
+| /user/register/ /user/password/ /user/login/ /user/logout/ /?q=admin/ 
+| /?q=comment/reply/ /?q=filter/tips/ /?q=node/add/ /?q=search/ 
+|_/?q=user/password/ /?q=user/register/ /?q=user/login/ /?q=user/logout/
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: Welcome to Bethany&#039;s Page | Bethany&#039;s Page
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|specialized
+Running (JUST GUESSING): Microsoft Windows 8|Phone|2008|7|8.1|Vista|2012 (92%)
+OS CPE: cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1 cpe:/o:microsoft:windows_server_2012
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows 8.1 Update 1 (92%), Microsoft Windows Phone 7.5 or 8.0 (92%), Microsoft Windows 7 or Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 or Windows 8.1 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 (91%), Microsoft Windows 7 Professional or Windows 8 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 R2 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=10D%TI=I%II=I%SS=S%TS=7)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M54DNW8NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 1.894 days (since Mon Mar  2 11:00:23 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   46.08 ms 10.11.1.50
+
+Nmap scan report for 10.11.1.71
+Host is up (0.022s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-title: Trees of Large Sizes
+|_Requested resource was site/index.php/
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 3.11 - 4.1 (94%), Linux 3.16 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 4.4 (93%), Linux 3.13 (91%), Linux 3.10 - 4.11 (90%), Linux 3.2 - 4.9 (90%), Linux 4.8 (90%), Linux 3.2 - 3.8 (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=40560%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=101%GCD=1%ISR=103%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.188 days (since Wed Mar  4 03:56:45 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.77 ms 10.11.1.71
+
+Nmap scan report for 10.11.1.72
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.20 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.20 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 3.2 - 3.8 (94%), Linux 3.8 (94%), WatchGuard Fireware 11.8 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 2.6.36 (93%), Linux 3.5 (93%), Linux 3.1 - 3.2 (92%), Linux 2.6.32 - 2.6.39 (92%), Linux 3.0 - 3.2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=34202%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=104%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW4%O2=M54DST11NW4%O3=M54DNNT11NW4%O4=M54DST11NW4%O5=M54DST11NW4%O6=M54DST11)
+WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)
+ECN(R=Y%DF=Y%T=40%W=3908%O=M54DNNSNW4%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 1.090 days (since Tue Mar  3 06:17:50 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.95 ms 10.11.1.72
+
+Nmap scan report for 10.11.1.101
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/passwords/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: TryHarder oscp.thinc.local
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 3.11 - 4.1 (94%), Linux 4.4 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 3.16 (92%), Linux 3.13 (91%), Linux 3.10 - 3.16 (91%), Linux 3.10 - 4.11 (90%), Linux 3.12 (90%), Linux 3.13 or 4.2 (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=36086%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=109%GCD=1%ISR=108%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M54DST11NW6%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW6%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 1.024 days (since Tue Mar  3 07:53:55 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=265 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.10 ms 10.11.1.101
+
+Nmap scan report for 10.11.1.115
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.0.40 ((Red Hat Linux))
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+|_http-title: Test Page for the Apache Web Server on Red Hat Linux
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|remote management|specialized|print server|switch|media device|broadband router
+Running (JUST GUESSING): Linux 2.4.X|2.6.X (94%), AVM embedded (94%), Dell embedded (94%), Google embedded (94%), HP embedded (94%), Philips embedded (94%), Motorola embedded (94%)
+OS CPE: cpe:/o:linux:linux_kernel:2.4.20 cpe:/h:avm:fritz%21box_fon_wlan_7170 cpe:/h:dell:remote_access_card:5 cpe:/o:linux:linux_kernel:2.4.21 cpe:/o:linux:linux_kernel:2.6.18 cpe:/h:motorola:surfboard_sb6120 cpe:/h:motorola:surfboard_sb6141
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Tomato 1.27 - 1.28 (Linux 2.4.20) (94%), AVM FRITZ!Box FON WLAN 7170 WAP (94%), Dell Remote Access Controller 5/I (DRAC 5/I) (94%), Google Mini search appliance (94%), HP 4200 PSA (Print Server Appliance) model J4117A (94%), HP Brocade 4Gb SAN switch or (94%), Linux 2.4.21 (embedded) (94%), Motorola SURFboard SB6120 or SB6141 cable modem (Linux 2.6.18) (94%), Linux 2.6.15 - 2.6.26 (likely embedded) (94%), Linux 2.6.20 - 2.6.24 (Ubuntu 7.04 - 8.04) (94%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=43678%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=C7%GCD=1%ISR=C7%TI=Z%II=I%TS=7)
+OPS(O1=M54DST11NW0%O2=M54DST11NW0%O3=M54DNNT11NW0%O4=M54DST11NW0%O5=M54DST11NW0%O6=M54DST11)
+WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)
+ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW0%CC=N%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.743 days (since Tue Mar  3 14:37:34 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=199 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.19 ms 10.11.1.115
+
+Nmap scan report for 10.11.1.116
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Dotty
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 3.11 - 4.1 (94%), Linux 4.4 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 3.16 (92%), Linux 3.13 (92%), Linux 3.10 - 3.16 (91%), Linux 3.10 - 3.12 (90%), Linux 3.10 - 4.11 (90%), Linux 3.12 (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=31105%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=2%ISR=10D%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 10.781 days (since Sat Feb 22 13:43:24 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.22 ms 10.11.1.116
+
+Nmap scan report for 10.11.1.123
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.39 ((Win64) OpenSSL/1.1.1b PHP/7.3.5)
+|_http-favicon: Unknown favicon MD5: 56F7C04657931F2D0B79371B2D6E9820
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.39 (Win64) OpenSSL/1.1.1b PHP/7.3.5
+| http-title: Welcome to XAMPP
+|_Requested resource was http://10.11.1.123/dashboard/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2016 (94%), Microsoft Windows 10 1607 (91%), Microsoft Windows Server 2012 (91%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (91%), Microsoft Windows Server 2012 R2 (91%), Microsoft Windows Server 2008 R2 (90%), Microsoft Windows 10 1511 - 1607 (88%), Microsoft Windows 7 Professional (88%), Microsoft Windows 10 1511 (87%), Microsoft Windows 7 or Windows Server 2008 R2 (87%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=38710%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=10C%TI=I%II=I%SS=S%TS=A)
+OPS(O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8ST11%O6=M54DST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%T=80%W=2000%O=M54DNW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.107 days (since Wed Mar  4 05:54:00 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   19.91 ms 10.11.1.123
+
+Nmap scan report for 10.11.1.133
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS 5.6
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Wed, 04 Mar 2020 13:24:54 GMT
+|     Server: Microsoft IIS 5.6
+|     Vary: Accept-Encoding
+|     Content-Length: 619
+|     Connection: close
+|     Content-Type: text/html; charset=UTF-8
+|     <html>
+|     <head>
+|     <title>Let's play with the offsec team</title>
+|     </head>
+|     <body style="color: #FFFFFF; background-color: #000000;font-family: verdana;">
+|     <center>
+|     <div style="width:600px;height:399px;background-image:url(offsec-team.jpg);">
+|     <form method="post" action="login.asp">
+|     <table style="padding-top:170px;">
+|     <tr>
+|     <td>Username: </td><td><input type="text" name="username" value=""></td>
+|     </tr>
+|     <tr>
+|     <td>Password: </td><td><input type="password" name="password"></td>
+|     </tr>
+|     <tr>
+|     colspan="2" align="right"><input type="submit" name="submit" value="Enter"></td>
+|     </tr>
+|     </table>
+|     </form>
+|     </div>
+|     </center>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Wed, 04 Mar 2020 13:24:55 GMT
+|     Server: Microsoft IIS 5.6
+|     Vary: Accept-Encoding
+|     Content-Length: 619
+|     Connection: close
+|     Content-Type: text/html; charset=UTF-8
+|     <html>
+|     <head>
+|     <title>Let's play with the offsec team</title>
+|     </head>
+|     <body style="color: #FFFFFF; background-color: #000000;font-family: verdana;">
+|     <center>
+|     <div style="width:600px;height:399px;background-image:url(offsec-team.jpg);">
+|     <form method="post" action="login.asp">
+|     <table style="padding-top:170px;">
+|     <tr>
+|     <td>Username: </td><td><input type="text" name="username" value=""></td>
+|     </tr>
+|     <tr>
+|     <td>Password: </td><td><input type="password" name="password"></td>
+|     </tr>
+|     <tr>
+|     colspan="2" align="right"><input type="submit" name="submit" value="Enter"></td>
+|     </tr>
+|     </table>
+|     </form>
+|     </div>
+|     </center>
+|     </body>
+|_    </html>
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Microsoft IIS 5.6
+|_http-title: Let's play with the offsec team
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.80%I=7%D=3/4%Time=5E5FAC21%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,325,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2004\x20Mar\x202020
+SF:\x2013:24:54\x20GMT\r\nServer:\x20Microsoft\x20IIS\x205\.6\r\nVary:\x20
+SF:Accept-Encoding\r\nContent-Length:\x20619\r\nConnection:\x20close\r\nCo
+SF:ntent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n<html>\n<head>\n<titl
+SF:e>Let's\x20play\x20with\x20the\x20offsec\x20team</title>\n</head>\n<bod
+SF:y\x20style=\"color:\x20#FFFFFF;\x20background-color:\x20#000000;font-fa
+SF:mily:\x20verdana;\">\n<center>\n<div\x20style=\"width:600px;height:399p
+SF:x;background-image:url\(offsec-team\.jpg\);\">\n<form\x20method=\"post\
+SF:"\x20action=\"login\.asp\">\n<table\x20style=\"padding-top:170px;\">\n<
+SF:tr>\n<td>Username:\x20</td><td><input\x20type=\"text\"\x20name=\"userna
+SF:me\"\x20value=\"\"></td>\n</tr>\n<tr>\n<td>Password:\x20</td><td><input
+SF:\x20type=\"password\"\x20name=\"password\"></td>\n</tr>\n<tr>\n<td\x20c
+SF:olspan=\"2\"\x20align=\"right\"><input\x20type=\"submit\"\x20name=\"sub
+SF:mit\"\x20value=\"Enter\"></td>\n</tr>\n</table>\n</form>\n</div>\n</cen
+SF:ter>\n</body>\n</html>\n")%r(HTTPOptions,325,"HTTP/1\.1\x20200\x20OK\r\
+SF:nDate:\x20Wed,\x2004\x20Mar\x202020\x2013:24:55\x20GMT\r\nServer:\x20Mi
+SF:crosoft\x20IIS\x205\.6\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x
+SF:20619\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset
+SF:=UTF-8\r\n\r\n<html>\n<head>\n<title>Let's\x20play\x20with\x20the\x20of
+SF:fsec\x20team</title>\n</head>\n<body\x20style=\"color:\x20#FFFFFF;\x20b
+SF:ackground-color:\x20#000000;font-family:\x20verdana;\">\n<center>\n<div
+SF:\x20style=\"width:600px;height:399px;background-image:url\(offsec-team\
+SF:.jpg\);\">\n<form\x20method=\"post\"\x20action=\"login\.asp\">\n<table\
+SF:x20style=\"padding-top:170px;\">\n<tr>\n<td>Username:\x20</td><td><inpu
+SF:t\x20type=\"text\"\x20name=\"username\"\x20value=\"\"></td>\n</tr>\n<tr
+SF:>\n<td>Password:\x20</td><td><input\x20type=\"password\"\x20name=\"pass
+SF:word\"></td>\n</tr>\n<tr>\n<td\x20colspan=\"2\"\x20align=\"right\"><inp
+SF:ut\x20type=\"submit\"\x20name=\"submit\"\x20value=\"Enter\"></td>\n</tr
+SF:>\n</table>\n</form>\n</div>\n</center>\n</body>\n</html>\n");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.10 - 3.12 (91%), Linux 4.4 (91%), Linux 4.9 (89%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.10 - 3.16 (86%), Linux 3.10 - 4.11 (85%), Linux 3.11 - 4.1 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=106%GCD=1%ISR=10B%TI=Z%II=I%TS=A)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.675 days (since Tue Mar  3 16:16:09 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   18.00 ms 10.11.1.133
+
+Nmap scan report for 10.11.1.217
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.3 (CentOS)
+|_http-title: Did not follow redirect to https://10.11.1.217/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall|general purpose|proxy server|WAP|PBX
+Running (JUST GUESSING): Linux 2.6.X (94%), Cisco embedded (94%), Riverbed embedded (94%), Ruckus embedded (94%), ZoneAlarm embedded (93%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/h:riverbed:steelhead_200 cpe:/h:ruckus:7363 cpe:/h:zonealarm:z100g cpe:/h:cisco:uc320w cpe:/h:cisco:rv042
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (94%), Linux 2.6.9 - 2.6.27 (94%), Riverbed Steelhead 200 proxy server (94%), Ruckus 7363 WAP (94%), Linux 2.6.9 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 2.6.9 (CentOS 4.4) (94%), ZoneAlarm Z100G WAP (93%), Linux 2.6.18 (92%), Linux 2.6.32 (92%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=40078%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=CD%GCD=1%ISR=D0%TI=Z%II=I%TS=A)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)
+ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW7%CC=N%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.725 days (since Tue Mar  3 15:03:53 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=205 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: 127.0.0.1
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   18.36 ms 10.11.1.217
+
+Nmap scan report for 10.11.1.223
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Win64) OpenSSL/1.0.2q PHP/5.6.40)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-favicon: Unknown favicon MD5: 9252836E46BB0304BED26A5B96DF4DD4
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.38 (Win64) OpenSSL/1.0.2q PHP/5.6.40
+|_http-title: ApPHP MicroBlog
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2012|2016|7|2008|Vista (87%), Linux 2.6.X (85%)
+OS CPE: cpe:/o:microsoft:windows_server_2012 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_vista::sp1:home_premium cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2012 (87%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (87%), Microsoft Windows Server 2012 R2 (87%), Microsoft Windows Server 2016 (87%), Microsoft Windows 7 (87%), Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (86%), Microsoft Windows Vista Home Premium SP1 (85%), Linux 2.6.18 - 2.6.22 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=34931%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=10E%TI=I%II=I%SS=S%TS=U)
+OPS(O1=M54DNW8NNS%O2=M54DNW8NNS%O3=M54DNW8%O4=M54DNW8NNS%O5=M54DNW8NNS%O6=M54DNNS)
+WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)
+ECN(R=Y%DF=Y%T=80%W=FFFF%O=M54DNW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.29 ms 10.11.1.223
+
+Nmap scan report for 10.11.1.227
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 5.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD COPY PROPFIND SEARCH LOCK UNLOCK DELETE PUT POST MOVE MKCOL PROPPATCH
+|_  Potentially risky methods: TRACE COPY PROPFIND SEARCH LOCK UNLOCK DELETE PUT MOVE MKCOL PROPPATCH
+|_http-server-header: Microsoft-IIS/5.0
+|_http-title: Directory Listing Denied
+| http-webdav-scan: 
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, COPY, PROPFIND, SEARCH, LOCK, UNLOCK
+|   WebDAV type: Unknown
+|   Server Type: Microsoft-IIS/5.0
+|_  Server Date: Wed, 04 Mar 2020 13:26:30 GMT
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows XP (93%), Microsoft Windows XP SP2 (91%), Microsoft Windows 2000 Server SP4 or Windows XP Professional SP3 (91%), Microsoft Windows 2000 SP4 (91%), Microsoft Windows XP SP3 (90%), Microsoft Windows Server 2003 SP2 (89%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (89%), Microsoft Windows 7 (89%), Microsoft Windows 2000 SP4 or Windows XP SP2 or SP3 (87%), Microsoft Windows Server 2003 SP0 or Windows XP SP2 (87%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=33463%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=106%TI=I%II=I%SS=S%TS=0)
+OPS(O1=M54DNW0NNT00NNS%O2=M54DNW0NNT00NNS%O3=M54DNW0NNT00%O4=M54DNW0NNT00NNS%O5=M54DNW0NNT00NNS%O6=M54DNNT00NNS)
+WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)
+ECN(R=Y%DF=Y%T=80%W=FAF0%O=M54DNW0NNS%CC=N%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.34 ms 10.11.1.227
+
+Nmap scan report for 10.11.1.234
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.14 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.14 (Ubuntu)
+|_http-title: Business Statistics | New Server for Thinc&#039;s Business Sta...
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|terminal|WAP|firewall|switch
+Running (JUST GUESSING): Linux 3.X|2.6.X|2.4.X (95%), IGEL embedded (94%), HP embedded (94%), IPFire 2.X (92%), Check Point embedded (90%), Extreme Networks ExtremeXOS 12.X (90%)
+OS CPE: cpe:/o:linux:linux_kernel:3.2.0 cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:2.6 cpe:/h:igel:ud3 cpe:/h:hp:msm410 cpe:/o:ipfire:ipfire:2.11 cpe:/o:linux:linux_kernel:2.4 cpe:/o:extremenetworks:extremexos:12.5.4
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 2.6.32 (94%), IGEL UD3 thin client (Linux 2.6) (94%), HP MSM410 WAP (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 2.6.35 (93%), IPFire 2.11 firewall (Linux 2.6.32) (92%), DD-WRT v24-sp1 (Linux 2.4) (91%), Linux 2.6.31 - 2.6.32 (91%), Check Point UTM-1 Edge X firewall (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=41775%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=CC%GCD=2%ISR=CF%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M54DST11NW6%O6=M54DST11)
+WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)
+ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW6%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 2.322 days (since Mon Mar  2 00:44:26 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=200 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.40 ms 10.11.1.234
+
+Nmap scan report for 10.11.1.237
+Host is up (0.024s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.2.22 ((Debian))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (95%), Linux 3.2 - 3.8 (94%), Linux 3.8 (94%), WatchGuard Fireware 11.8 (94%), Linux 2.6.18 - 2.6.22 (94%), Linux 3.1 - 3.2 (93%), Linux 3.5 (93%), Linux 2.6.36 (92%), Linux 2.6.32 - 2.6.39 (92%), Linux 3.0 - 3.2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=32979%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=103%GCD=1%ISR=10C%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW3%O2=M54DST11NW3%O3=M54DNNT11NW3%O4=M54DST11NW3%O5=M54DST11NW3%O6=M54DST11)
+WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)
+ECN(R=Y%DF=Y%T=40%W=3908%O=M54DNNSNW3%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.995 days (since Tue Mar  3 08:35:16 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   20.43 ms 10.11.1.237
+
+Nmap scan report for 10.11.1.250
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE  VERSION
+80/tcp open  ssl/http Apache/2.4.18 (Ubuntu)
+|_http-generator: WordPress 5.3
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: SandBox &#8211; See the future, Feel the shine
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (90%)
+OS CPE: cpe:/o:linux:linux_kernel:3.2.0 cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.2.0 (90%), Linux 3.11 - 4.1 (89%), Linux 3.16 (89%), Linux 4.4 (88%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.13 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=F6%GCD=1%ISR=103%TI=Z%II=I%TS=8)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.145 days (since Wed Mar  4 04:58:37 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=246 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.11 ms 10.11.1.250
+
+Nmap scan report for 10.11.1.251
+Host is up (0.023s latency).
+Scanned at 2020-03-04 08:24:38 EST for 197s
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (89%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.10 - 3.12 (89%), Linux 4.4 (89%), Linux 4.9 (89%), Linux 2.6.18 - 2.6.22 (86%), Linux 4.0 (86%), Linux 3.10 - 4.11 (85%), Linux 3.11 - 4.1 (85%), Linux 3.16 (85%), Linux 3.18 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/4%OT=80%CT=%CU=%PV=Y%DS=2%DC=T%G=N%TM=5E5FACDB%P=x86_64-pc-linux-gnu)
+SEQ(SP=100%GCD=1%ISR=101%TI=Z%II=I%TS=A)
+OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 1.801 days (since Mon Mar  2 13:14:53 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 10.11.1.5
+2   21.19 ms 10.11.1.251
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar  4 08:27:55 2020 -- 256 IP addresses (43 hosts up) scanned in 197.90 seconds

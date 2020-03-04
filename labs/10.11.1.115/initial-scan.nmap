@@ -1,0 +1,62 @@
+# Nmap 7.80 scan initiated Tue Mar  3 14:43:34 2020 as: nmap -sC -sV -oA initial-scan 10.11.1.115
+Nmap scan report for 10.11.1.115
+Host is up (0.029s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 1.1.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 0        0            4096 Feb 28  2003 pub
+22/tcp    open  ssh         OpenSSH 3.5p1 (protocol 1.99)
+| ssh-hostkey: 
+|   1024 36:70:a4:9f:32:47:ac:57:3f:ef:a1:ec:0b:ba:44:1b (RSA1)
+|   1024 64:79:7d:c6:a2:63:32:54:f0:d9:2b:f3:5d:c7:d2:69 (DSA)
+|_  1024 48:fb:39:3d:30:82:50:de:66:69:c5:ca:45:62:c0:dc (RSA)
+|_sshv1: Server supports SSHv1
+25/tcp    open  smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp    open  http        Apache httpd 2.0.40 ((Red Hat Linux))
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+|_http-title: Test Page for the Apache Web Server on Red Hat Linux
+111/tcp   open  rpcbind     2 (RPC #100000)
+139/tcp   open  netbios-ssn Samba smbd (workgroup: MYGROUP)
+143/tcp   open  imap        UW imapd 2001.315rh
+|_imap-capabilities: SORT STARTTLS NAMESPACE OK completed CAPABILITY SCAN THREAD=REFERENCES LOGIN-REFERRALS AUTH=LOGINA0001 MAILBOX-REFERRALS IMAP4REV1 MULTIAPPEND THREAD=ORDEREDSUBJECT IDLE
+|_ssl-date: 2020-03-03T20:47:07+00:00; +1h00m16s from scanner time.
+199/tcp   open  smux        Linux SNMP multiplexer
+443/tcp   open  ssl/https   Apache/2.0.40 (Red Hat Linux)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+|_http-title: Bad request!
+|_ssl-date: 2020-03-03T20:47:06+00:00; +1h00m15s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|_    SSL2_RC4_64_WITH_MD5
+3306/tcp  open  mysql       MySQL (unauthorized)
+32768/tcp open  status      1 (RPC #100024)
+Service Info: Host: tophat.acme.local; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h00m15s, deviation: 0s, median: 1h00m14s
+| nbstat: NetBIOS name: TOPHAT, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   TOPHAT<00>           Flags: <unique><active>
+|   TOPHAT<03>           Flags: <unique><active>
+|   TOPHAT<20>           Flags: <unique><active>
+|   MYGROUP<00>          Flags: <group><active>
+|_  MYGROUP<1e>          Flags: <group><active>
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  3 14:48:05 2020 -- 1 IP address (1 host up) scanned in 270.93 seconds

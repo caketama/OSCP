@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Mar  3 15:58:12 2020 as: nmap -sC -sV -p139,445 -oA smb 10.11.1.115 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p139,445 -oA smb 10.11.1.115" start="1583269092" startstr="Tue Mar  3 15:58:12 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1583269092" endtime="1583269104"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.115" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" extrainfo="workgroup: aMYGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="nbstat" output="NetBIOS name: TOPHAT, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/></hostscript><times srtt="26159" rttvar="17466" to="100000"/>
+</host>
+<runstats><finished time="1583269104" timestr="Tue Mar  3 15:58:24 2020" elapsed="12.24" summary="Nmap done at Tue Mar  3 15:58:24 2020; 1 IP address (1 host up) scanned in 12.24 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

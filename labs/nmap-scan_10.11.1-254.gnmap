@@ -1,0 +1,42 @@
+# Nmap 7.80 scan initiated Wed Mar  4 08:24:37 2020 as: nmap -A -p80 --open -oA nmap-scan_10.11.1-254 10.11.1.0/24
+Host: 10.11.1.14 ()	Status: Up
+Host: 10.11.1.14 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 5.1/	Seq Index: 138	IP ID Seq: Incremental
+Host: 10.11.1.21 ()	Status: Up
+Host: 10.11.1.21 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/	Seq Index: 261	IP ID Seq: Incremental
+Host: 10.11.1.31 ()	Status: Up
+Host: 10.11.1.31 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/	Seq Index: 261	IP ID Seq: Incremental
+Host: 10.11.1.35 ()	Status: Up
+Host: 10.11.1.35 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|5.4.16)/	Seq Index: 261	IP ID Seq: All zeros
+Host: 10.11.1.39 ()	Status: Up
+Host: 10.11.1.39 ()	Ports: 80/open/tcp//http//nginx 1.6.3/	Seq Index: 260	IP ID Seq: All zeros
+Host: 10.11.1.50 ()	Status: Up
+Host: 10.11.1.50 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 8.5/	Seq Index: 260	IP ID Seq: Incremental
+Host: 10.11.1.71 ()	Status: Up
+Host: 10.11.1.71 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.7 ((Ubuntu))/	Seq Index: 257	IP ID Seq: All zeros
+Host: 10.11.1.72 ()	Status: Up
+Host: 10.11.1.72 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.20 ((Ubuntu))/	Seq Index: 260	IP ID Seq: All zeros
+Host: 10.11.1.101 ()	Status: Up
+Host: 10.11.1.101 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 265	IP ID Seq: All zeros
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 80/open/tcp//http//Apache httpd 2.0.40 ((Red Hat Linux))/	Seq Index: 199	IP ID Seq: All zeros
+Host: 10.11.1.116 ()	Status: Up
+Host: 10.11.1.116 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Seq Index: 260	IP ID Seq: All zeros
+Host: 10.11.1.123 ()	Status: Up
+Host: 10.11.1.123 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.39 ((Win64) OpenSSL|1.1.1b PHP|7.3.5)/	Seq Index: 258	IP ID Seq: Incremental
+Host: 10.11.1.133 ()	Status: Up
+Host: 10.11.1.133 ()	Ports: 80/open/tcp//http//Microsoft IIS 5.6/	Seq Index: 262	IP ID Seq: All zeros
+Host: 10.11.1.217 ()	Status: Up
+Host: 10.11.1.217 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.3/	Seq Index: 205	IP ID Seq: All zeros
+Host: 10.11.1.223 ()	Status: Up
+Host: 10.11.1.223 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.38 ((Win64) OpenSSL|1.0.2q PHP|5.6.40)/	Seq Index: 258	IP ID Seq: Incremental
+Host: 10.11.1.227 ()	Status: Up
+Host: 10.11.1.227 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 5.0/	Seq Index: 258	IP ID Seq: Incremental
+Host: 10.11.1.234 ()	Status: Up
+Host: 10.11.1.234 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.14 ((Ubuntu))/	Seq Index: 200	IP ID Seq: All zeros
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.22 ((Debian))/	Seq Index: 259	IP ID Seq: All zeros
+Host: 10.11.1.250 ()	Status: Up
+Host: 10.11.1.250 ()	Ports: 80/open/tcp//ssl|http//Apache|2.4.18 (Ubuntu)/	Seq Index: 246	IP ID Seq: All zeros
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/	Seq Index: 256	IP ID Seq: All zeros
+# Nmap done at Wed Mar  4 08:27:55 2020 -- 256 IP addresses (43 hosts up) scanned in 197.90 seconds
