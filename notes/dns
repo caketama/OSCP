@@ -1,0 +1,16 @@
+The first server in the DNS chain is known as the DNS recursor and is responsible for interacting with the DNS infrastructure and returning the results to the client
+The DNS recursor contacts one of the servers in the DNS root zone.
+The DNS root server then respons with the address of the server responsible for the zone containing the Top Level Domain(TLD)
+
+Once the DNS recursor receives the address of the TLD DNS server, it queries it for the address of the authoritative nameserver for the domain.
+The authoritative nameserver is the final step in the DNS lookup process and contains the DNS records in a local database known as the zone file.
+It typically hosts two zones for each domain, the forward lookup zone that is used to find the IP address of a specific hostname
+and the reverse lookup zone(if configured), which is used to find the hostname of a specific IP address.
+Once the DNS recursor provides the DNS client with the IP address for the domain, the browser can contact the correct webserver at its IP address and load the webpage.
+
+NS - Nameserver records contain the name of the authoritative servers hosting the records for a domain
+A - Also know as a host record, the "a record" conaints the ip address of a hostname(such as megacorpone.com)
+MX - Mail Exchange records. Contains the names of the servers responsible for handling email
+PTR - Pointer Records are used in reverse lookup zones and are used to find the records associated with an IP address
+CNAME - Canonical name record are usd to create aliases for other host records
+TXT - Text records can contain any arbitarydata and can be used for various purposes
