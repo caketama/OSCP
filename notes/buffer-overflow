@@ -1,0 +1,32 @@
+CPU Registers:
+EAX (accumulator): Arithmetical and logical instructions
+EBX (base): Base point for memory addresses
+ECX (counter): Loop, shift and rotation counter
+EDXX (data): I/O port addressing, multiplication, and division
+ESI (source index): Pointer addressing of data and source in string copy operations
+EDI (destination index): Pointer addressing of data and destination in string copy operations
+
+ESP, the stack pointer, keeps "track" of the most recently referenced location on the stack (top of the stack) by storing a pointer to it.
+
+A pointer is a reference to an address (or location) in memory.
+When we say a register "stores a pointer" or "points" to an address, this essentially means that the register is storing that target address.
+
+EIP, the instruction pointer, is one of the most important registers for our purposes as it always points  to  the  next  code  instruction  to  be  executed.  Since  EIP  essentially  directs  the  flow  of  a program, it is an attacker’s primary target when exploiting any memory corruption vulnerability suchas a buffer overflow.
+
+Immunity keyboard shortcuts:
+F2: set breakpoint
+F7: step into: follow execution flow into a given function call
+F8: step over: execute entire function and return from it
+F9: run
+Ctrl+F9: execute until return
+
+Data Execution Prevention:
+DEP is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. 
+The primary benefit of DEP is to help prevent code execution from data pages by raising an exception when such attempts are made.
+
+Address space layout randomization:
+ASLR randomizes the base addresses of loaded applications and DLLs every time the operating system  is  booted.  
+On  older  Windows  operating  systems  like  Windows  XP  where  ASLR  is  not implemented, all DLLs are loaded at the same memory address every time, making exploitation much simpler. 
+When coupled with DEP, ASLR provides a very strong mitigation against exploitation.
+
+Finally, CFG, Microsoft’s implementation of control-flow integrity, performs validation of indirect code branching, preventing overwrites of function pointers
