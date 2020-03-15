@@ -30,3 +30,5 @@ On  older  Windows  operating  systems  like  Windows  XP  where  ASLR  is  not 
 When coupled with DEP, ASLR provides a very strong mitigation against exploitation.
 
 Finally, CFG, Microsoft’s implementation of control-flow integrity, performs validation of indirect code branching, preventing overwrites of function pointers
+
+Shellcode is a collection of assembly instructions that, when executed, perform a desired action of the attacker. This is typically opening a reverse or bind shell, but may also include more complex actions.
