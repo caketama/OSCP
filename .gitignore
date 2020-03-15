@@ -1,4 +1,7 @@
 *.ovpn
 *.rar
 *.tar.gz
-labs/*
+labs/**
+etc/**
+pwk-34318-657911/**
+scripts/**
